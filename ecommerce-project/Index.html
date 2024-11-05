@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header y Navegación -->
+    <header>
+        <img src="images/logo.png" alt="Logo de la tienda" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Barra de búsqueda -->
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Buscar productos">
+        <button onclick="searchProducts()">Buscar</button>
+    </div>
+
+    <!-- Sección de Productos -->
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Bienvenidos a Mi Tienda Online</h1>
+            <p>Encuentra los mejores productos aquí.</p>
+        </section>
+
+        <section id="productos" class="product-gallery">
+            <h2>Nuestros Productos</h2>
+            <div class="product-item">
+                <img src="images/au.jpg" alt="Auriculares">
+                <h3>Auriculares</h3>
+                <p>$10.00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Bandolera.jpg" alt="Bandolera">
+                <h3>Bandolera</h3>
+                <p>$20.00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="images/anafe2.jpg" alt="Anafe">
+                <h3>Anafe</h3>
+                <p>$20.00</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript de búsqueda -->
+    <script>
+        function searchProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const products = document.querySelectorAll('.product-item');
+
+            products.forEach(product => {
+                const productName = product.querySelector('h3').textContent.toLowerCase();
+                if (productName.includes(searchInput)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                } 
+            });
+        }
+    </script>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contact-form">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
