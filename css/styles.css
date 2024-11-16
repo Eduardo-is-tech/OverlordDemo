@@ -1,9 +1,15 @@
-/* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
+
+
+body { 
+    font-family: "Titillium+Web", sans-serif, Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    color: #a10606;
+    padding: 0;    color: #a10606;
+
+    .titillium-web-black {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
 }
 
 header .logo {
@@ -100,7 +106,6 @@ footer {
     margin: 20px;
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
     header, footer {
         flex-direction: column;
@@ -111,7 +116,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* Estilo para el encabezado */
+
 header {
     display: flex;
     flex-direction: column;
@@ -123,15 +128,15 @@ header {
 }
 
 header .logo {
-    width: 300px; /* Ajusta el tamaño del logo si es necesario */
-    margin-bottom: 30px; /* Espacio entre el logo y el menú */
+    width: 300px;
+    margin-bottom: 30px;
 }
 
-/* Estilos para el menú de navegación */
+
 header nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px; /* Espacio entre los enlaces */
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
@@ -140,4 +145,112 @@ header nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+}
+
+/* Estilos para la página de producto */
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* Estilos para el menú */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 5px 0;
+}
+
+.dropdown-content li a {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f0f0f0;
 }

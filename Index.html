@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Tienda Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Header y Navegación -->
     <header>
         <img src="images/logo.png" alt="Logo de la tienda" class="logo">
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
+                <li class="dropdown">
+                    <a href="#productos">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pages/Auriculares.html">Auriculares</a></li>
+                        <li><a href="pages/Bandolara.html">Bandolera</a></li>
+                        <li><a href="pages/Anafe.html">Anafe</a></li>                        
+                    </ul>
+                </li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    
-    <!-- Barra de búsqueda -->
+
     <div class="search">
         <input type="text" id="searchInput" placeholder="Buscar productos">
         <button onclick="searchProducts()">Buscar</button>
     </div>
 
-    <!-- Sección de Productos -->
     <main>
         <section id="inicio" class="hero">
             <h1>Bienvenidos a Mi Tienda Online</h1>
@@ -38,25 +44,23 @@
             <div class="product-item">
                 <img src="images/au.jpg" alt="Auriculares">
                 <h3>Auriculares</h3>
-                <p>$10.00</p>
-                <button>Comprar</button>
+                <p>$20000.00</p>
+                <a href="pages/Auriculares.html"><button>Ver Producto</button></a>
             </div>
             <div class="product-item">
                 <img src="images/Bandolera.jpg" alt="Bandolera">
                 <h3>Bandolera</h3>
-                <p>$20.00</p>
-                <button>Comprar</button>
+                <p>$39000.00</p>
+                <a href="pages/Bandolara.html"><button>Ver Producto</button></a>
             </div>
             <div class="product-item">
                 <img src="images/anafe2.jpg" alt="Anafe">
                 <h3>Anafe</h3>
-                <p>$20.00</p>
-                <button>Comprar</button>
+                <p>$380000.00</p>
+                <a href="pages/Anafe.html"><button>Ver Producto</button></a>
             </div>
         </section>
     </main>
-
-    <!-- JavaScript de búsqueda -->
     <script>
         function searchProducts() {
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
@@ -73,10 +77,12 @@
         }
     </script>
 
-    <!-- Formulario de Contacto -->
     <section id="contacto" class="contact-form">
         <h2>Contacto</h2>
-        <form action="#" method="post">
+        <form 
+            action="https://formspree.io/f/mqakqbvp"
+            method="POST">
+
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
@@ -89,8 +95,6 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Mi Tienda Online. Todos los derechos reservados.</p>
     </footer>
