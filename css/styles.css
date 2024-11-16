@@ -1,13 +1,14 @@
-body { 
+body {
     font-family: "Titillium+Web", sans-serif, Arial, sans-serif;
     margin: 0;
-    padding: 0;    color: #a10606;
+    padding: 0;
+    color: #a10606;
+}
 
-    .titillium-web-black {
-        font-family: "Titillium Web", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-    }
+.titillium-web-black {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 header .logo {
@@ -145,6 +146,83 @@ header nav a {
     font-size: 16px;
 }
 
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 5px 0;
+}
+
+.dropdown-content li a {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f0f0f0;
+}
 .product-page {
     display: flex;
     flex-direction: column;
@@ -201,53 +279,4 @@ button {
 
 button:hover {
     background-color: #555;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 150px;
-    z-index: 1;
-}
-
-.dropdown-content li {
-    margin: 5px 0;
-}
-
-.dropdown-content li a {
-    padding: 5px;
-    color: black;
-    text-decoration: none;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content li a:hover {
-    background-color: #f0f0f0;
 }
