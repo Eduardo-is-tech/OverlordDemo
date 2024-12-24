@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body {
+    font-family: 'Cutive Mono', monospace;
+    background-image: url(../images/Back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Barrasuperior{
+    text-align: center;
+    align-items: center;
+    padding: 0.8rem;
+    padding-top: 2rem;
+    margin: auto;
+    list-style-type: none;
+}
+a{
+    text-align: center;
+    color: rgb(18, 143, 226);
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgb(241, 244, 247);
+  
+}
+a:hover {
+    color: #008ab8;
+    text-shadow: 0 0 15px #00bfff;
+    transition: 0.3s ease-in-out;
+}
+.ImagenesSimilares {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 10px;
+    align-items: center;
+}
+.ImagenesSimilares img, 
+.ImagenesSimilares video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(66, 65, 65, 0.8);
+    margin: 0;
+}
+.Enlaces{
+    text-align: center;
+    align-items: center;
+}
+.Comentarios{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ComentarioInput{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Titulo{
+    padding: auto;
+    padding-top: 2rem;
+    color: rgb(240, 14, 14);
+    text-align: center;
+    font-size: 50px;
+}
+.Subtitulo{
+    padding: 1.5rem;
+    color: rgb(240, 14, 14);
+    text-align: center;
+    font-size: 30px;
+}
+.Descripcion{
+    padding: 1rem;
+    color: rgb(240, 14, 14);
+    text-align: center;
+    font-size: 20px;
+}
+.Imagenes, .ImagenesInferior{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.Imagenes img, .ImagenesInferior img{
+    width: 96%;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(240, 14, 14);
+    margin: 5px;
+}
+.Buscador{
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 60px;
+    list-style-type: none;
+}
+.Descripcion, .Descripcion h2, .Descripcion h3, .Descripcion h4{
+    padding: 2rem;
+    color: rgb(24, 162, 226);
+    text-align: center;
+    font-size: 20px;
+}
+.Lista{
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 35px;
+}
+.Cards{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem
+}
+.Tarjeta{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 500px;
+}
+.Tarjeta-content{
+    padding: 1rem;
+}
+.Tarjeta-content h2{
+    margin-top: 0;
+    color: aliceblue;
+}
+.Tarjeta-content p{
+    font-size: 95%;
+    color: aliceblue;
+}
+.ImagenesObjetos img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(66, 65, 65);
+    margin: 5px;
+}
+.Button{
+    text-align: center;
+}
+.Boton {
+    color: aliceblue;
+    background: linear-gradient(135deg, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 4%, rgb(72, 8, 220) 45%, rgb(72, 8, 220) 100%);
+    border-radius: 5px;
+    border: solid rgb(72, 8, 220) 2px;
+    margin: 1rem;
+    width: 30%;
+    height: auto;
+    padding: 0.5rem;
+}
+.BotonObjetos{
+    color: aliceblue;
+    background: linear-gradient(135deg, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 0%, rgb(72, 8, 220) 4%, rgb(72, 8, 220) 45%, rgb(72, 8, 220) 100%);
+    border-radius: 5px;
+    border: solid rgb(72, 8, 220) 2px;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    max-width: 90%;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+#carrusel {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.imagenes img {
+    width: 100%;
+    margin: 0 5px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(72, 8, 220);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+.boton:hover {
+    background-color: rgb(72, 8, 220);
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+#checkout-modal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgb(72, 8, 220); 
+    justify-content: center; 
+    align-items: center;
+}
+.checkout-content {
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px;
+    text-align: center;
+}
+#carrito ul {
+    color: #ffffff;
+    list-style: none;
+    padding: 0;
+}
+#carrito ul li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+#carrito {
+    text-align: center;
+}
+#carrito button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgb(20, 20, 20) 0%, rgb(21, 21, 21) 0%, rgb(28, 28, 28) 0%, rgba(17,17,17,1) 0%, rgb(17, 17, 17) 0%, rgb(25, 25, 25) 4%, rgba(28,28,28,1) 45%, rgba(0,0,0,1) 100%);
+    border: solid rgb(79, 76, 76) 2px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#carrito button:hover {
+    background-color: #555;
+}
+#productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+.producto {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgb(72, 8, 220);
+}
+.producto span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.producto button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.producto button:hover {
+    background-color: #777;
+}
+.ImagenesProductos {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+@media (min-width: 601px) and (max-width: 991px){
+    .Imagenes, .ImagenesInferior {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .Imagenes img, .ImagenesInferior img {
+        width: 48%;
+    }
+    .Imagenes img:nth-child(3),
+    .ImagenesInferior img:nth-child(3) {
+        width: 100%;
+        max-width: 50%;
+    }
+    .imagenes img {
+        width: calc(50% - 10px);
+    }
+}
+@media(min-width: 992px){
+    .Titulo{
+        font-size: 80px;
+    }
+    li{
+        display: inline;
+        padding: 1rem;
+    }
+    .Comentarios{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 80%;
+        padding: 0.5rem;
+        margin: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ComentarioInput{
+        width: 100%;
+        display: block;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .MensajeExito {
+        font-size: 14px;
+        margin-top: 0.5rem;
+    }
+    .Imagenes, .ImagenesInferior{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Imagenes img, .ImagenesInferior img{
+        width: 30%;
+    }
+    .Cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .Tarjeta{
+        width: 33%;
+    }
+    .ImagenesSimilares{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+    }
+    .ImagenesSimilares img{
+        width: 90%;
+    }
+    .ImagenesSimilares video{
+        width: 95%;
+    }
+    .Boton {
+        width: 20%;
+    }
+    .imagenes img {
+        width: calc(33.33% - 10px);
+    }
+}
+.footer {
+    background-color: #a10606;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+.contac-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    border-radius: 10px;
+    box-shadow: #a10606;
+ 
+}

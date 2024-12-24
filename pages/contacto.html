@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<body>
+    <nav id="BarraNavegacionSup">
+        <ul class="Barrasuperior">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/pages/carrito.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <header class="Titulo">Contacto</header>
+
+    <section class="Comentarios">
+        <form 
+            action="https://formspree.io/f/mqakqbvp"
+            method="POST">
+
+            <label for="Usuario">Nombre:</label>
+            <input type="text" name="name" required class="ComentarioInput">
+
+            <label for="Correo">Email:</label>
+            <input type="email" name="email" required class="ComentarioInput">
+
+            <label for="Mensaje">Mensaje:</label>
+            <textarea class="ComentarioInput" id="Message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <br>
+    <h1 class="Subtitulo">Nuestra Ubicación</h1>
+    <div>
+        <section class="contac-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26270.582000425333!2d-58.3854099!3d-34.60864335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1734963941349!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mi Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

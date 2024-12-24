@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="BarraNavegacionSup">
+        <ul class="Barrasuperior">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/pages/carrito.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="Descripcion">
+        <h1>Bienvenido a Mi Tienda Online</h1>
+        <p>Explora nuestra selección de productos de alta calidad diseñados para ti.</p>
+    </section>
+
+<div id="productos">
+    <div class="producto">
+        <img src="../images/auriculares gamer.jpg" alt="auriculares gamer" class="ImagenesProductos">
+        <span>Auriculares - $20.000</span>
+        <button onclick="agregarAlCarrito('Auriculares', 20000, 'Auriculares')">Agregar</button>
+    </div>
+    <div class="producto">
+        <img src="../images/anafe2.jpg" alt="anafe" class="ImagenesProductos">
+        <span>Anafe - $380.000</span>
+        <button onclick="agregarAlCarrito('Anafe', 380000, 'Anafe')">Agregar</button>
+    </div>
+    <div class="producto">
+        <img src="../images/bandolera.jpg" alt="bandolera" class="ImagenesProductos">
+        <span>Bandolera- $39.000</span>
+        <button onclick="agregarAlCarrito('Bandolera', 39000, 'Bandolera')">Agregar</button>
+    </div>
+    
+</div>
+<div id="carrito">
+    <h2 class="Subtitulo">Carrito de Compras</h2>
+    <ul id="lista-carrito" class=""></ul>
+    <p class="Subtitulo">Subtotal: $<span id="subtotal-carrito">0</span></p>
+    <p class="Subtitulo">Descuento: $<span id="descuento-carrito">0</span></p>
+    <p class="Subtitulo">IVA (21%): $<span id="iva-carrito">0</span></p>
+    <p class="Subtitulo"><strong>Total: $<span id="total-carrito">0</span></strong></p>
+    <button onclick="vaciarCarrito()" class="BotonObjetos">Vaciar Carrito</button>
+    <button onclick="mostrarCheckout()" class="BotonObjetos">Checkout</button>
+</div>
+<div id="checkout-modal" style="font-family: 'Cutive Mono', monospace">
+    <div class="checkout-content">
+        <h2>Finalizar Compra</h2>
+        <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+        <p>Descuento: $<span id="modal-descuento">0</span></p>
+        <p>IVA: $<span id="modal-iva">0</span></p>
+        <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+        <button onclick="realizarCompra()" class="BotonObjetos">Confirmar Compra</button>
+        <button onclick="cerrarCheckout()" class="BotonObjetos">Cancelar</button>
+    </div>
+</div>
+<footer>
+
+     <p>&copy; 2024 Mi Tienda Online. Todos los derechos reservados.</p>
+    
+</footer>
+<script src="../js/carrito.js"></script>
+</body>
+</html>
