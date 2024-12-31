@@ -3,27 +3,26 @@
 - [🛒 Mi Tienda Online](#-mi-tienda-online)
   - [📋 Características](#-características)
   - [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
-  - [📝 Licencia](#-licencia)
-
+  - [🚀 Cómo Usar el Proyecto](#-cómo-usar-el-proyecto)
 
 # 🛒 Mi Tienda Online
 
-¡Bienvenido a **Mi Tienda Online**! Este es un proyecto e-commerce sencillo donde puedes navegar por una selección de productos y realizar búsquedas. 
+¡Bienvenido a **Mi Tienda Online**! Este es un proyecto de e-commerce sencillo que te permite explorar una selección de productos y realizar búsquedas, con una experiencia fluida y dinámica.
 
 ## 📋 Características
 
-- **Página de inicio** con una bienvenida y una breve introducción.
-- **Galería de productos** con imagen, nombre y precio.
-- **Barra de búsqueda** que permite filtrar productos por nombre.
-- **Formulario de contacto** para que los clientes se puedan comunicar con la tienda.
-- **Diseño responsivo** usando Flexbox y CSS Grid para una experiencia óptima en dispositivos móviles y de escritorio.
+- **Página de inicio**: Una bienvenida atractiva con una introducción al proyecto.
+- **Galería de productos**: Presenta cada producto con su imagen, nombre y precio.
+- **Carrito de compras dinámico**: Permite agregar, eliminar y gestionar productos en tiempo real.
+- **Barra de búsqueda**: Filtra productos rápidamente por nombre.
+- **Formulario de contacto**: Facilita la comunicación entre clientes y la tienda.
+- **Diseño responsivo**: Adaptado para dispositivos móviles y de escritorio, utilizando Flexbox y CSS Grid.
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5**: Para la estructura del contenido.
-- **CSS3**: Para el diseño y la apariencia de la página.
-- **JavaScript**: Para funcionalidades interactivas, como la búsqueda de productos.
-- **Git** y **GitHub**: Para control de versiones y alojamiento del proyecto.
+- **HTML5**: Define la estructura semántica del contenido.
+- **CSS3**: Proporciona un diseño atractivo y adaptable.
+- **JavaScript**: Implementa funcionalidades interactivas y un carrito de compras dinámico.
+- **Git** y **GitHub**: Gestionan el control de versiones y alojan el proyecto.
 
-## 📝 Licencia
-2024 Copyright# OverlordDemo
+## 🚀 Cómo Usar el Proyecto
